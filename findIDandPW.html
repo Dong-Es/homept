@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디/비번 찾기</title>
+    <link rel="stylesheet" href="highbar1.css">
+    <link rel="stylesheet" href="findIDandPW.css">
+    <script src="findandpw.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+            <a href="login.html">
+               <button class="logobtn"><img class="logoimg" src="/image/Logo.jpg" alt=""></button>
+            </a>
+        </div>
+    </div>
+    <form class="findEmail"> <!--Email를 찾는 폼을 생성하였습니다.-->
+        <p class="emailtext">ID찾기</p>
+        <hr class="hr2"> <!--hr에 클라스를 주어 활용하였습니다.-->
+        <input class="finde" type="text" placeholder="Name" required> 
+        <!--input안에 키보드로 입력하면 text가 출력됩니다.required를 이용해 입력을 하지않으면 
+   경고문이 뜨게 하였습니다.-->
+        <input class="findc" type="password" placeholder="Cellphone" required>   
+        <!--input안에 키보드로 입력하면 text 대신에 .이 출력됩니다. required를 이용해 입력을 하지않으면 경고문이 뜨게 하였습니다.-->
+        <button class="emailfindbtn" type="button" onclick="javascript:btn1()">찾기</button>
+    </form>
+    <form class="findpassword">
+        <!--Password를 찾는 폼을 생성하였습니다.-->
+       <p class="emailtext">Password찾기</p>
+       <hr class="hr2">  <!--hr에 클라스를 주어 활용하였습니다.-->
+       <input class="findp" type="text" placeholder="Name" required>  
+       <!--input안에 키보드로 입력하면 text가 출력됩니다.required를 이용해 입력을 하지않으면 
+   경고문이 뜨게 하였습니다.-->
+       <input class="finda" type="text" placeholder="E-Mail" required>   
+       <!--input안에 키보드로 입력하면 text가 출력됩니다.required를 이용해 입력을 하지않으면 
+   경고문이 뜨게 하였습니다.-->
+       <input class="findw" type="password" placeholder="Cellphone" required>   
+       <!--input안에 키보드로 입력하면 text 대신에 .이 출력됩니다. required를 이용해 입력을 
+   하지 않으면 경고문이 뜨게 하였습니다.-->
+       <button class="emailfindpw" onclick="javascript:btn2()">찾기</button>
+   </form>
+   
+   <footer >
+    <div class="footer">
+        <img class="footerlogo" src="/image/logo1.png" alt="logo">
+        <div class="footer-text">
+            대표이사 임동균  &nbsp; | &nbsp; 사업자등록번호 012-34-56789 <br/>
+            (주) HomePT : Sixteam &nbsp; | &nbsp; 31065 충청남도 천안시 동남구 문암로 76<br/>
+            HomePT@bu.ac.kr &nbsp; | &nbsp; 대표번호 010-1234-5678<br/>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
