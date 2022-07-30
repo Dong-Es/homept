@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="mypage.js"></script>
+    <link rel="stylesheet" href="mypage.css">
+    <link rel="stylesheet" href="highbar1.css">
+    <link rel="stylesheet" href="mainmodal.css">
+    <script src="mainmodal.js"></script>
+    <link rel="short icon" href="/favicon_image/favicon.ico" type="image/x-icon">
+    <title>마이페이지</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+                <a href="main.html">
+                   <button class="logobtn"><img class="logoimg" src="/image/Logo.jpg" alt=""></button>
+                </a>
+            </div>
+            <p class="welcometext">오늘도 득근하세요. 별빛님</p>
+            <div class="log">
+                <div id="my_modal">
+                    <img class="profileimg" src="/image/profile.png" alt="">
+                    <h2>개인정보</h2>
+                    <a class="modal_close_btn">ⓧ</a>
+                    <p class="profiletext">안녕하세요 <br> 별빛님</p>
+                   <a href="main.html"><img class="proglogout" src="/image/login.png" alt=""></a>
+                   <hr class="progilehr">
+                   <button class="myprofiletbtn" onclick="location.href='mypage.html'"><img src="/image/profile.png" class="myprofile" alt=""><p class="profiletext2">내 정보 관리</p></button>
+                </div>
+                <button id="popup_open_btn"></button>       
+        </div>
+        <div class="droplist">
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle" id="drawer-toggle-label"></label>
+            <nav id="drawer">
+                <img class="sideimg" src="/image/logoblue.jpg" alt="여러분 운동 합시다.">
+                <hr class="sidehr">
+               <ul class="listli">
+                  <li><a class="lia" href="notice.html">공지사항</a></li>
+                  <li><a class="lia" href="event.html">이벤트</a></li>
+                  <li><a class="lia" href="execrise.html">운동</a></li>
+                  <li><a class="lia" href="bmi.html">BMI측정하기</a></li>
+                  <li><a class="lia" href="mypage.html">정보페이지</a></li>
+                  <li><a class="lia" href="company.html">회사소개</a></li>
+                  <div class="logouttext">
+                    <hr class="listhr">
+                    <a class="modal_close_btn">Login ⓧ</a>
+                </div>
+               </ul>
+            </nav>
+            <nav class="downlist">
+                <ul class="ullist">
+                    <li class="lilist"><a class="movelink" href="execrise.html">Exercise+</a>
+                    <!-- First Tier Drop Down -->
+                    <ul>
+                        <li class="lilist1"><a class="movelink" href="upperbody.html">상체</a></li>
+                        <li class="lilist1"><a class="movelink" href="lowerbody.html">하체</a></li>
+                    </ul> 
+                    <li class="lilist"><a class="movelink" href="#">헬스장 찾기</a>
+                    <li class="lilist"><a class="movelink" href="#">SNS +</a>
+                    <ul>
+                        <li class="lilist1"><a class="movelink" href="#">친구 찾기</a></li>
+                        <li class="lilist1"><a class="movelink" href="#">게시물</a></li>
+                    </ul> 
+                    <li class="lilist"><a class="movelink" href="bmi.html">Bmi측정</a>      
+                </ul>            
+            </nav>
+        </div>
+    </div>
+        <div class="outer">
+            <div id="joinInfoArea">
+                <form id="joinForm" action="%= request.getContextPath() %>/memberModify"
+                method="post" onsubmit="return validate();">
+                    <h1>마이페이지</h1>
+
+                    <h4>아이디</h4>
+                    <span class="input_area"><input type="text" maxlength="13" name="userId" value="dlalsgud82"></span>
+
+                    <h4>비밀번호</h4>
+                    <span class="input_area"><input type="password" maxlength="15" name="userPwd"></span>
+                    <button id="pwdUpdateBtn" class="button" type="button">비밀번호 변경</button>
+
+                    <h4>이름</h4>
+                    <span class="input_area"><input type="text" maxlength="5" name="userName" value="이민형"></span>
+
+                    <h4>생년월일</h4>
+                    <span class="input_area"><input type="text" maxlength="5" name="userName" 
+                                                    placeholder="8자리 입력"></span>
+
+                    <h4>성별</h4>
+                    <div class="fm">
+                        <button type="button" class="fmb" id="여자" >여자</button>
+                        <button type="button" class="fmb" id="남자" >남자</button>
+                      </div>
+                      <input type="hidden" id="female" value="여자">
+                      <input type="hidden" id="male" value="남자">
+
+                    <h4>연락처</h4>
+                    <span class="input_area"><input type="tel" maxlength="11" name="phone"
+                                            placeholder="(-없이)01012345678"></span>
+
+                    <h4>이메일</h4>
+                    <span class="input_area"><input type="email" name="email"></span>
+
+
+                    <h4>우편번호</h4>
+                    <span class="input_area"><input type="text" name="address" class="postcodify_postcode5"></span>
+                    <button type="button" class="button" id="postcodify_search_button">검색</button>
+                    
+                    <h4>상세주소<h4>
+                    <span class="input_area"><input type="text" name="address" class="postcodify_details"></span>
+                </div>
+            </div>
+                    <footer >
+                        <div class="footer">
+                            <img class="footerlogo" src="/image/logo1.png" alt="logo">
+                                <div class="footer-text">
+                                대표이사 임동균  &nbsp; | &nbsp; 사업자등록번호 012-34-56789 <br/>
+                                (주) HomePT : Sixteam &nbsp; | &nbsp; 31065 충청남도 천안시 동남구 문암로 76<br/>
+                                HomePT@bu.ac.kr &nbsp; | &nbsp; 대표번호 010-1234-5678<br/>
+                                </div>
+                        </div>
+                    </footer>
+
+    </body>
+    </html>
