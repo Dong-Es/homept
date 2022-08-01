@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePT기업소개</title>
+    <link rel="stylesheet" href="company.css">
+    <meta name="generator" content="editplus" />
+    <meta name="author" content="zzarungna" />
+    <script src="mainmodal.js"></script>
+    <link rel="stylesheet" href="highbar.css">
+    <link rel="stylesheet" href="mainmodal.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+            <a href="main.html">
+               <button class="logobtn"><img class="logoimg" src="/image/Logo.jpg" alt=""></button>
+            </a>
+        </div>
+        <p class="welcometext">오늘도 득근하세요. 별빛님</p>
+        <div class="log">
+            <div id="my_modal">
+                <img class="profileimg" src="/image/profile.png" alt="">
+                <h2>개인정보</h2>
+                <a class="modal_close_btn">ⓧ</a>
+                <p class="profiletext">안녕하세요 <br> 별빛님</p>
+               <a href="login.html"><img class="proglogout" src="/image/login.png" alt=""></a>
+               <hr class="progilehr">
+               <button class="myprofiletbtn" onclick="location.href='mypage.html'"><img src="/image/profile.png" class="myprofile" alt=""><p class="profiletext2">내 정보 관리</p></button>
+            </div>
+            <button id="popup_open_btn"></button>       
+    </div>
+    <div class="droplist">
+        <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+        <label for="drawer-toggle" id="drawer-toggle-label"></label>
+        <nav id="drawer">
+            <img class="sideimg" src="/image/logoblue.jpg" alt="여러분 운동 합시다.">
+            <hr class="sidehr">
+           <ul class="listli">
+              <li><a class="lia" href="notice.html">공지사항</a></li>
+              <li><a class="lia" href="event.html">이벤트</a></li>
+              <li><a class="lia" href="execrise.html">운동</a></li>
+              <li><a class="lia" href="bmi.html">BMI측정하기</a></li>
+              <li><a class="lia" href="mypage.html">정보페이지</a></li>
+              <li><a class="lia" href="company.html">회사소개</a></li>
+              <div class="logouttext">
+                <hr class="listhr">
+                <a class="modal_close_btn">Login ⓧ</a>
+            </div>
+           </ul>
+        </nav>
+        <nav class="downlist">
+            <ul class="ullist">
+                <li class="lilist"><a class="movelink" href="execrise.html">Exercise+</a>
+                <!-- First Tier Drop Down -->
+                <ul>
+                    <li class="lilist1"><a class="movelink" href="upperbody.html">상체</a></li>
+                    <li class="lilist1"><a class="movelink" href="lowerbody.html">하체</a></li>
+                </ul> 
+                <li class="lilist"><a class="movelink" href="#">헬스장 찾기</a>
+                <li class="lilist"><a class="movelink" href="#">SNS +</a>
+                <ul>
+                    <li class="lilist1"><a class="movelink" href="#">친구 찾기</a></li>
+                    <li class="lilist1"><a class="movelink" href="#">게시물</a></li>
+                </ul> 
+                <li class="lilist"><a class="movelink" href="bmi.html">Bmi측정</a>      
+            </ul>            
+        </nav>
+    </div>
+    <div class="mainbox">
+<!-- 기업 소개  -->
+        <h1>ABOUT HOME PT</h1>
+
+<!-- 한줄 소개 -->
+        <p class="maintext">
+            <p1 class="mark">🙶</p1> 모든 주요 근육 그룹을 위한 일일 운동 플랜을 간편하게 제공❟ <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;기구나 트레이너가 필요 없이 집에서 근육을 키우고 건강을 유지할 수 있는  HOME PT앱<p1 class="mark"> 🙷</p1><br/><br/>
+        </p>
+
+<!-- main 이미지 -->
+        <img class="ptimg" src="/image/pt.jpg"><br/><br/>
+
+<!-- 상세 설명 -->
+        <h1>INTRODUCE</h1>
+        <p class="text_Contents">
+            이 앱은 복근, 가슴, 다리, 팔, 그리고 신체 전체를 위한 운동을 선보입니다. <br/>
+            모든 운동은 전문가들이 디자인했습니다. <br/>
+            기구가 필요한 운동은 아무것도 없기 때문에 헬스장에 가지 않아도 됩니다.<br/>
+            <span class="text_under">집에서 하루에 몇 분만 투자해도 효과적으로</span> 근육을 키우고 선명한 복근을 만들 수 있습니다. 
+            <br/>
+            준비운동 및 스트레칭은 과학적으로 운동할 수 있도록 디자인되었습니다. 
+            <br/>
+            <span class="text_under">각 운동을 위한 애니메이션 및 동영상 가이드</span>로 올바른 자세로 운동 할 수 있게
+            됩니다. 
+            <br/>
+            저희 앱을 꾸준히 이용하면 단 몇 주만에 신체가 변하는 것을 느낄 수 있게 됩니다.
+        </p>
+
+<!-- 기능 -->
+
+        <h1>FUNCTION</h1>
+        <p class="fc">
+            - 준비운동 및 스트레칭 루틴<br/>
+            - 운동 진행 상황 자동 저장<br/>
+            - 차트로 체중 변화 추적<br/>
+            - BMI 측정<br/>
+            - 운동 시간 알림 사용자 정의<br/>
+            - 자세한 동영상 및 애니메이션 가이드<br/>
+            - SNS에서 친구들과 공유<br/>
+            - 근처 헬스장 찾기<br/>
+        </p>
+    </div>
+
+
+    <footer >
+        <div class="footer">
+            <img class="footerlogo" src="/image/logo1.png" alt="logo">
+            <div class="footer-text">
+                대표이사 임동균  &nbsp; | &nbsp; 사업자등록번호 012-34-56789 <br/>
+                (주) HomePT : Sixteam &nbsp; | &nbsp; 31065 충청남도 천안시 동남구 문암로 76<br/>
+                HomePT@bu.ac.kr &nbsp; | &nbsp; 대표번호 010-1234-5678<br/>
+            </div>
+        </div>
+        </footer>
+</body>
+
+</html> 
