@@ -1,0 +1,143 @@
+body{
+  background-image: url("/image/home2_2.png");
+  background-size:1150px;
+  background-repeat: no-repeat; /*사진이 바둑판 형식이 아닌 맞춤형식으로 나오게 합니다*/
+  width: 1888px;
+  height: 960px;
+  overflow: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.login-page {
+  width: 400px;
+  margin-left: 1300px;
+}
+.form {                   /*폼에 대한 CSS입니다.*/
+  position: absolute;
+  background: #FFFFFF;
+  width: 350px;
+  height: 460px;
+  padding: 50px;
+  text-align: center;     /*폼안에 쓰는 text들을 가운데로 정렬되도록 하였습니다.*/
+  top: 190px;
+  border: 3px solid rgba(0, 0, 0, 0.295);
+  border-radius: 20px;
+}
+.form input {
+  font-family: "Roboto";  /*글꼴을  "Roboto"로 변경합니다*/
+  outline: 2;             /*input을 클릭했을때 바깥라인이 생기도록 하였습니다.*/
+  background: #ffffff;
+  color: #000;
+  width: 320px;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px 17px;     /*padding-top : 15px*/ 
+  font-size: 14px;
+  border: 3px solid rgba(0, 0, 0, 0.295);
+  border-radius: 20px;
+}
+.form button {
+  outline: 0;
+  width: 100%;
+  border: 0px;           /*버튼들의 바깥라인을 0px로 설정하였습니다.*/
+  margin-bottom: 2px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;       /*마우스를 올리면 커서의 모양이 바뀌도록 만들었습니다.*/
+  border-radius: 20px;
+}
+.loginformimg{
+  width: 300px;
+  position: absolute;
+  top: -113px;
+  left: 75px;
+  border: solid 3px rgba(0, 0, 0, 0.295);
+}
+.loginbtn{
+  background-color: #797979;        /*로그인 버튼의 색깔입니다.*/
+}
+.loginbtn:hover {
+  background: #202020;             /*로그인 버튼위에 마우스를 올렸을때 색깔이 변합니다.*/
+  color: #000;
+  font-size: bolder;
+}
+.loginlink{
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.naverlogin{
+  background-color: rgb(52, 207, 52); 
+}
+.naverlogin:hover{
+  background-color: rgb(103, 226, 103);
+}
+.facebooklogin{
+  background-color: rgb(40, 40, 247);
+}
+.facebooklogin:hover{
+  background-color: rgb(88, 88, 253);
+}
+.googlelogin{
+  background-color: rgb(221, 27, 66);
+}
+.googlelogin:hover{
+  background-color: rgb(233, 76, 107) ;
+}
+.applelogin{
+  color: #ffffff;
+  background-color: #000000;
+}
+.applelogin:hover{
+  background-color: #505050 ;
+}
+.joinmessage {
+  margin-top: 15px;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.joinmessage a {
+  color: #202020;
+  text-decoration: none;      /*텍스트의 밑줄을 삭제하였습니다.*/
+}
+.findmessage {
+    margin-top: 10px;          
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+.findmessage a {
+    color: #202020;
+    text-decoration: none;
+  }
+h4{
+  color: #868686;
+  margin-top: 10px;
+}
+
+footer{
+  background-color: #c5f3ff;
+  width: 106%;
+  margin-left: -20px;
+}
+.footer{
+  width: 1000px;
+  height: 110px;
+  margin-left: 650px;
+  margin-top: 760px;
+}
+
+.footer-text{
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 25px;
+  padding-left: 30px;
+  float: left;
+}
+
+.footerlogo{
+  width: 200px;
+  float: left;
+  margin-top: 10px;
+  padding-right: auto;
+  padding-left: -500px;
+}

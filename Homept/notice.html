@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="short icon" href="/favicon_image/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="highbar.css">
+        <link rel="stylesheet" href="mainmodal.css">
+        <link rel="stylesheet" href="notice.css">
+        <link rel="stylesheet" href="eventpop.css">   <!--게임뉴스 페이지에서 사용하는 팝업창의 css를 불러옵니다.-->
+        <script src="mainmodal.js"></script>
+        <script src="eventpop.js"></script>
+        <title>HomePT공지사항</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+                <a href="main.html">
+                   <button class="logobtn"><img class="logoimg" src="/image/Logo.jpg" alt=""></button>
+                </a>
+            </div>
+            <p class="welcometext">오늘도 득근하세요. 별빛님</p>
+            <div class="log">
+                <div id="my_modal">
+                    <img class="profileimg" src="/image/profile.png" alt="">
+                    <h2>개인정보</h2>
+                    <a class="modal_close_btn">ⓧ</a>
+                    <p class="profiletext">안녕하세요 <br> 별빛님</p>
+                   <a href="main.html"><img class="proglogout" src="/image/login.png" alt=""></a>
+                   <hr class="progilehr">
+                   <button class="myprofiletbtn" onclick="location.href='mypage.html'"><img src="/image/profile.png" class="myprofile" alt=""><p class="profiletext2">내 정보 관리</p></button>
+                </div>
+                <button id="popup_open_btn"></button>       
+        </div>
+        <div class="droplist">
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle" id="drawer-toggle-label"></label>
+            <nav id="drawer">
+                <img class="sideimg" src="/image/logoblue.jpg" alt="여러분 운동 합시다.">
+                <hr class="sidehr">
+               <ul class="listli">
+                  <li><a class="lia" href="notice.html">공지사항</a></li>
+                  <li><a class="lia" href="event.html">이벤트</a></li>
+                  <li><a class="lia" href="execrise.html">운동</a></li>
+                  <li><a class="lia" href="bmi.html">BMI측정하기</a></li>
+                  <li><a class="lia" href="mypage.html">정보페이지</a></li>
+                  <li><a class="lia" href="company.html">회사소개</a></li>
+                  <div class="logouttext">
+                    <hr class="listhr">
+                    <a class="modal_close_btn">Login ⓧ</a>
+                </div>
+               </ul>
+            </nav>
+            <nav class="downlist">
+                <ul class="ullist">
+                    <li class="lilist"><a class="movelink" href="execrise.html">Exercise+</a>
+                    <!-- First Tier Drop Down -->
+                    <ul>
+                        <li class="lilist1"><a class="movelink" href="upperbody.html">상체</a></li>
+                        <li class="lilist1"><a class="movelink" href="lowerbody.html">하체</a></li>
+                    </ul> 
+                    <li class="lilist"><a class="movelink" href="#">헬스장 찾기</a>
+                    <li class="lilist"><a class="movelink" href="#" onclick="alert('준비 중입니다.')">SNS +</a>
+                    <ul>
+                        <li class="lilist1"><a class="movelink" href="#">친구 찾기</a></li>
+                        <li class="lilist1"><a class="movelink" href="#">게시물</a></li>
+                    </ul> 
+                    <li class="lilist"><a class="movelink" href="bmi.html">Bmi측정</a>      
+                </ul>            
+            </nav>
+        </div>
+        </div>
+        <img src="/image/logoblue.jpg" alt="" class="logoimg2">
+            <form class="news">
+        <p class="newstext">HomePT NEWS</p>
+        <hr class="newshr">
+         <button type="button" class="update" onclick="location.href='event.html'">이벤트</button>
+         <!--버튼을 클릭시 페이지가 이동됩니다.-->
+         <button type="button" class="server" onclick="location.href='notice.html'">점검</button>
+         <!--버튼을 클릭시 페이지가 이동됩니다.-->
+          <hr class="newshr3"> 
+          <a class="text1"  type='link' id="pop_link" >(공지) SNS 업데이트 7월 중 서비스 시작합니다.</a>
+          <!--팝업창을 생성하는 링크를 추가하였습니다.-->
+          <div class="pop_link">  
+          <div class="pop_wrap">
+              <div class="pop_close"><a href="#"></a></div>
+              <!--팝업창을 끄는 링크를 생성하였습니다.-->
+              <div class="newsgs1"> <!--팝업창에 생성되는 상단의 이미지입니다.-->
+                  <img class="popimg" src="/image/snsstart.jpeg" alt="Isolation">
+                
+<pre class="message"> <!--팝업창에 표시되는 글입니다.-->
+    <h1>공지사항 제목</h1>
+    <p class="mainmess">
+    긴급점검 </p>
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+    공지사항 내용
+</pre>
+ </div>
+ </div>
+ </div>
+ <hr>
+ <a class="text1"  type='link' id="pop_link" >(공지) 5월 점검</a>
+ <!--팝업창을 생성하는 링크를 추가하였습니다.-->
+ <div class="pop_link"> 
+ <div class="pop_wrap">
+     <div class="pop_close"><a href="#"></a></div>
+     <!--팝업창을 끄는 링크를 생성하였습니다.-->
+     <div class="newsgs1"> <!--팝업창에 생성되는 상단의 이미지입니다.-->
+         <img class="popimg" src="star.jpg" alt="Isolation">
+         <pre class="message"> <!--팝업창에 표시되는 글입니다.-->
+            <h1>공지사항 제목</h1>
+            <p class="mainmess">
+            긴급점검 </p>
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+            공지사항 내용
+        </pre>
+</div>
+</div>
+<hr>
+<a class="text1"  type='link' id="pop_link" >(공지) 4월 점검</a>
+ </div>
+</form>
+<footer >
+    <div class="footer">
+        <img class="footerlogo" src="/image/logo1.png" alt="logo">
+        <div class="footer-text">
+            대표이사 임동균  &nbsp; | &nbsp; 사업자등록번호 012-34-56789 <br/>
+            (주) HomePT : Sixteam &nbsp; | &nbsp; 31065 충청남도 천안시 동남구 문암로 76<br/>
+            HomePT@bu.ac.kr &nbsp; | &nbsp; 대표번호 010-1234-5678<br/>
+        </div>
+    </div>
+    </footer>
+          <script>
+            function modal(id) {
+                var zIndex = 9999;
+                var modal = document.getElementById(id);
+
+                // 모달 div 뒤에 희끄무레한 레이어
+                var bg = document.createElement('div');
+                bg.setStyle({
+                    position: 'fixed',
+                    zIndex: zIndex,
+                    left: '0px',
+                    top: '0px',
+                    width: '100%',
+                    height: '100%',
+                    overflow: 'auto',
+                    // 레이어 색갈은 여기서 바꾸면 됨
+                    backgroundColor: 'rgba(0,0,0,0.4)'
+                });
+                document.body.append(bg);
+
+                // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
+                modal.querySelector('.modal_close_btn').addEventListener('click', function() {
+                    bg.remove();
+                    modal.style.display = 'none';
+                });
+
+                modal.setStyle({
+                    position: 'fixed',
+                    display: 'block',
+                    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+
+                    // 시꺼먼 레이어 보다 한칸 위에 보이기
+                    zIndex: zIndex + 1,
+
+                    // div center 정렬
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    msTransform: 'translate(-50%, -50%)',
+                    webkitTransform: 'translate(190%, -112%)'
+                });
+            }
+
+            // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
+            Element.prototype.setStyle = function(styles) {
+                for (var k in styles) this.style[k] = styles[k];
+                return this;
+            };
+
+            document.getElementById('popup_open_btn').addEventListener('click', function() {
+                // 모달창 띄우기
+                modal('my_modal');
+            });
+        </script>
+    </body>
+</html>

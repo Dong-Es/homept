@@ -1,0 +1,70 @@
+.wrapper{
+  width: 1950px;
+  height: 70px;  /*세로길이는 70px입니다*/
+  background-color: #c5f3ff;
+  margin-left: -7px;
+
+}
+.t1{
+  color: white;
+}
+.logo{
+  text-align: center;
+  transform: translateX(-150px);
+}
+ .logobtn{
+   height: 63px;
+   width: 290px;
+   position: absolute;
+   background-color: #ffffff;   
+   border: none;
+   color: rgb(0, 0, 0);
+   font-size: 35px;
+   cursor: pointer;  /*마우스 커서 변하도록 하였습니다.*/
+   margin-top: 2px;
+   border-radius: 30px;
+ }
+ .logobtn:before{
+   position: absolute;
+   content: '';     /*가상요소를 사용하고있습니다.*/
+   height: 0;
+   width: 0;
+   bottom: 0;
+   left: 0;
+ }
+ .logobtn:after{
+   position: absolute;
+   content: '';      /*가상요소를 사용하고있습니다.*/
+   height: 0;
+   width: 0;
+   top: 0;
+   right: 0;
+ }
+ .logobtn:hover:before{
+   height: 60px;
+   width: 286px;
+   border: 3px solid #000000;
+   border-right: none;
+   border-bottom: none;
+   transition: height 0.3s linear, width 0.3s linear 0.3s;
+   border-radius: 30px;
+   /*border-right와 border-bottom을 마우스 버튼이 올라가기전에는 none이지만 
+   transtition height 0.5s linear width 0.5s linear 0.5를 주어서 마우스를 올리면 
+   테두리가 생기도록 하였습니다*/
+ }
+ .logobtn:hover:after{
+   height: 60px;
+   width: 286px;
+   border: 3px solid #000000;
+   border-left: none;
+   border-top: none;
+   transition: height 0.3s linear, width 0.3s linear 0.3s;
+   border-radius: 30px;            
+ /*border-left와 border-top을 마우스 버튼이 올라가기전에는 none이지만 
+   transtition height 0.5s linear width 0.5s linear 0.5를 주어서 마우스를 올리면 
+   테두리가 생기도록 하였습니다*/
+ }
+.logoimg{
+  height: 60px;
+}
+/* 위에는 로그의 애니메이션 효과 css*/

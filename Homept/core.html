@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="short icon" href="/favicon_image/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="highbar.css">
+        <link rel="stylesheet" href="core.css">
+        <link rel="stylesheet" href="mainmodal.css">
+        <script src="mainmodal.js"></script>
+        <script src="dropmenulist.js"></script>
+        <title>HomePT운동/상체(코어)</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+                <a href="main.html">
+                   <button class="logobtn"><img class="logoimg" src="/image/Logo.jpg" alt=""></button>
+                </a>
+            </div>
+            <p class="welcometext">오늘도 득근하세요. 별빛님</p>
+            <div class="log">
+                <div id="my_modal">
+                    <img class="profileimg" src="/image/profile.png" alt="">
+                    <h2>개인정보</h2>
+                    <a class="modal_close_btn">ⓧ</a>
+                    <p class="profiletext">안녕하세요 <br> 별빛님</p>
+                   <a href="main.html"><img class="proglogout" src="/image/login.png" alt=""></a>
+                   <hr class="progilehr">
+                   <button class="myprofiletbtn" onclick="location.href='mypage.html'"><img src="/image/profile.png" class="myprofile" alt=""><p class="profiletext2">내 정보 관리</p></button>
+                </div>
+                <button id="popup_open_btn"></button>       
+        </div>
+        <div class="droplist">
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle" id="drawer-toggle-label"></label>
+            <nav id="drawer">
+                <img class="sideimg" src="/image/logoblue.jpg" alt="여러분 운동 합시다.">
+                <hr class="sidehr">
+               <ul class="listli">
+                  <li><a class="lia" href="notice.html">공지사항</a></li>
+                  <li><a class="lia" href="event.html">이벤트</a></li>
+                  <li><a class="lia" href="execrise.html">운동</a></li>
+                  <li><a class="lia" href="bmi.html">BMI측정하기</a></li>
+                  <li><a class="lia" href="mypage.html">정보페이지</a></li>
+                  <li><a class="lia" href="company.html">회사소개</a></li>
+                  <div class="logouttext">
+                    <hr class="listhr">
+                    <a class="modal_close_btn">Login ⓧ</a>
+                </div>
+               </ul>
+            </nav>
+            <nav class="downlist">
+                <ul class="ullist">
+                    <li class="lilist"><a class="movelink" href="execrise.html">Exercise+</a>
+                    <!-- First Tier Drop Down -->
+                    <ul>
+                        <li class="lilist1"><a class="movelink" href="upperbody.html">상체</a></li>
+                        <li class="lilist1"><a class="movelink" href="lowerbody.html">하체</a></li>
+                    </ul> 
+                    <li class="lilist"><a class="movelink" href="#">헬스장 찾기</a>
+                    <li class="lilist"><a class="movelink" href="#">SNS +</a>
+                    <ul>
+                        <li class="lilist1"><a class="movelink" href="#">친구 찾기</a></li>
+                        <li class="lilist1"><a class="movelink" href="#">게시물</a></li>
+                    </ul> 
+                    <li class="lilist"><a class="movelink" href="bmi.html">Bmi측정</a>      
+                </ul>            
+            </nav>
+        </div>
+        <div class="Explanation">
+            <p class="Explanationtext">코어(가슴) 운동</h3>
+                <hr>
+                <ul class="Charcters">
+                    <input type="radio" name="radio-btn" id="img-1" checked />
+                    <!--라디오박스에 이미지1을 저장하고 체크해둡니다.-->
+                    <li class="slide-container">
+                        <div class="Charcter">
+                            <img id="image-id" src="/execrise_image/upperbody/core1.gif"/>
+                            <h1>사이드 플랭크</h1>
+                            <p class="coreexetext">
+                                <br>
+                                1. 옆을 보고 눕는다. <br>
+                                <br>
+                                2. 왼쪽 팔꿈치는 바닥에, 오른쪽 손은 허리를 짚는다. <br>
+                                <br>
+                                3. 몸 전체가 일자가 되도록 골반을 들어 올린다.<br>
+                                <br>
+                                4. 완성된 자세를 약 30초 동안 유지한다.
+                                <br>
+                                주의할 점. 귀를 어깨에 붙이지 않는다. 
+                                <br>
+                                <br> 주요 운동 부위. 복부, 허리
+                                <br> 
+                                <br> 
+                                + 코어 운동을 할 때는 팔다리 대신 복부, 허리,<br> 엉덩이 등 몸의 중심 부분을 이용한다. <br> 
+                                단, 동작을 너무 크고 빠르게 하면 허리에 무리가 갈 수 있으므로 주의한다. <br> 각 운동은 왼쪽과 오른쪽 모두 5회 이상 반복한다. 완성된 자세에서 버틸 때는 정해둔 시간에 <br> 연연하지 않고 가능한 만큼 실시한다.
+                            </p>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-btn" id="img-2" />
+                    <!--라디오박스에 이미지2을 저장합니다.-->
+                    <li class="slide-container">
+                        <div class="Charcter">
+                            <img id="image-id" src="/execrise_image/upperbody/core2.gif"/>
+                            <h1>버드독</h1>
+                            <p class="coreexetext">
+                                <br>
+                                1. 두 손과 두 무릎을 바닥에 대고 엎드린다. <br>
+                                <br>
+                                2. 양쪽 무릎은 골반 너비로 벌린다. <br>
+                                   <br>
+                                3. 오른팔과 왼발이 일자가 되도록 동시에 들어올린다.<br>
+                                <br>
+                                4. 완성된 자세를 약 10초 동안 유지한다.
+                                <br>
+                                <br>
+                                주의할 점. 다리는 골반보다 더 높이 들지 않는다. 주요 운동 부위. 복부, 엉덩이.
+                                <br>
+                                <br>
+
+                                + 코어 운동을 할 때는 팔다리 대신 복부, 허리,<br> 엉덩이 등 몸의 중심 부분을 이용한다. <br> 
+                                단, 동작을 너무 크고 빠르게 하면 허리에 무리가 갈 수 있으므로 주의한다. <br> 각 운동은 왼쪽과 오른쪽 모두 5회 이상 반복한다. 완성된 자세에서 버틸 때는 정해둔 시간에 <br> 연연하지 않고 가능한 만큼 실시한다.
+                            </p>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img-3" />
+                    <!--라디오박스에 이미지3을 저장합니다.-->
+                    <li class="slide-container">
+                        <div class="Charcter">
+                          <img id="image-id" src="/execrise_image/upperbody/core3.gif" />
+                          <h1>슈퍼맨</h1>
+                            <p class="coreexetext">
+                            <br>
+                            1. 엎드린 자세에서 두 팔과 두 발을 쭉 편다.  <br>
+                            <br>
+                            2. 팔과 다리를 동시에 들어 올린다. <br>
+                            <br>
+                            3. 시선은 45도 바닥을 향한다.<br>
+                            <br>
+                            4. 완성된 자세를 약 5초 동안 유지한다.
+                            <br>
+                            <br>
+                            주의할 점.  팔과 다리에 힘을 뺀다. 주요 운동 부위. 허리, 엉덩이, 허벅지.
+                            <br>
+                            <br>
+
+                            + 코어 운동을 할 때는 팔다리 대신 복부, 허리,<br> 엉덩이 등 몸의 중심 부분을 이용한다. <br> 
+                            단, 동작을 너무 크고 빠르게 하면 허리에 무리가 갈 수 있으므로 주의한다. <br> 각 운동은 왼쪽과 오른쪽 모두 5회 이상 반복한다. 완성된 자세에서 버틸 때는 정해둔 시간에 <br> 연연하지 않고 가능한 만큼 실시한다.
+                            </p>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="img-4"/>
+                    <!--라디오박스에 이미지4을 저장합니다.-->
+                    <li class="slide-container">
+                        <div class="Charcter">
+                            <img id="image-id" src="/execrise_image/upperbody/core4.gif" />
+                            <h1>릿지</h1>
+                            <p class="coreexetext">
+                            <br>
+                            1. 무릎은 A형태로 세운 채 하늘을 바라보고 눕는다.   <br>
+                            <br>
+                            2. 두 팔은 쭉 펴서 바닥을 지탱한다. <br>
+                            <br>
+                            3. 허벅지와 상체가 일자가 되도록 골반을 들어 올린다.<br>
+                            <br>
+                            4. 완성된 자세를 약 5초 동안 유지한다.
+                            <br>
+                            <br>
+                            주의할 점. 발가락이 아닌 뒤꿈치에 힘을 싣는다. 주요 운동 부위. 허리, 엉덩이.
+                            <br>
+                            <br>
+
+                            + 코어 운동을 할 때는 팔다리 대신 복부, 허리,<br> 엉덩이 등 몸의 중심 부분을 이용한다. <br> 
+                            단, 동작을 너무 크고 빠르게 하면 허리에 무리가 갈 수 있으므로 주의한다. <br> 각 운동은 왼쪽과 오른쪽 모두 5회 이상 반복한다. 완성된 자세에서 버틸 때는 정해둔 시간에 <br> 연연하지 않고 가능한 만큼 실시한다.
+                            </p>
+                        </div>
+                        
+                    <li class="nav-dots">
+                      <label for="img-1" class="core1" id="img-dot-1"></label>    <!--label에 이미지1저장-->
+                      <label for="img-2" class="core2" id="img-dot-2"></label>    <!--label에 이미지2저장-->
+                      <label for="img-3" class="core3" id="img-dot-3"></label>    <!--label에 이미지3저장-->
+                      <label for="img-4" class="core4" id="img-dot-4"></label>    <!--label에 이미지4저장-->
+                    </li>
+                </ul>
+        </div>
+        <nav class="menu">
+            <nav class="drop-down-menu">
+              <input type="checkbox" class="activate" id="accordion-1" name="accordion-1">
+              <label for="accordion-1" class="menu-title"><a class="exercisebody" href="upperbody.html">상체(upper body) 종류</a> | 더보기 +</label>
+              <div class="drop-down">
+                <a class="uppermenu" href="shoulder.html">어깨</a>
+                <a class="uppermenu" href="core.html">코어</a>
+                <a class="uppermenu" href="biceps.html">팔(이두)</a>
+                <a class="uppermenu" href="triceps.html">팔(삼두)</a>
+                <a class="uppermenu" href="back.html">등</a>
+                <a class="uppermenu" class="last" href="#">Normal</a>
+              </div>
+            </nav>
+        
+            <nav class="drop-down-menu">
+              <input type="checkbox" class="activate" id="accordion-2" name="accordion-2">
+              <label for="accordion-2" class="menu-title"><a class="exercisebody" href="lowerbody.html">하체(lower body) 종류</a> | 더보기 +</label>
+              <div class="drop-down">
+                <a class="uppermenu" href="barebodybarbell.html">맨몸 하체 운동</a>
+                <a class="uppermenu" href="barbelllowerbodyworkout.html">바벨 하체 운동</a>
+                <a class="uppermenu" href="dumbbelllowerbodyworkout.html">덤벨 하체 운동</a>
+              </div>
+            </nav>
+        </nav>
+            <footer >
+                <div class="footer">
+                    <img class="footerlogo" src="/image/logo1.png" alt="logo">
+                        <div class="footer-text">
+                        대표이사 임동균  &nbsp; | &nbsp; 사업자등록번호 012-34-56789 <br/>
+                        (주) HomePT : Sixteam &nbsp; | &nbsp; 31065 충청남도 천안시 동남구 문암로 76<br/>
+                        HomePT@bu.ac.kr &nbsp; | &nbsp; 대표번호 010-1234-5678<br/>
+                        </div>
+                </div>
+            </footer>
+          <script>
+            function modal(id) {
+                var zIndex = 9999;
+                var modal = document.getElementById(id);
+
+                // 모달 div 뒤에 희끄무레한 레이어
+                var bg = document.createElement('div');
+                bg.setStyle({
+                    position: 'fixed',
+                    zIndex: zIndex,
+                    left: '0px',
+                    top: '0px',
+                    width: '100%',
+                    height: '100%',
+                    overflow: 'auto',
+                    // 레이어 색갈은 여기서 바꾸면 됨
+                    backgroundColor: 'rgba(0,0,0,0.4)'
+                });
+                document.body.append(bg);
+
+                // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
+                modal.querySelector('.modal_close_btn').addEventListener('click', function() {
+                    bg.remove();
+                    modal.style.display = 'none';
+                });
+
+                modal.setStyle({
+                    position: 'fixed',
+                    display: 'block',
+                    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+
+                    // 시꺼먼 레이어 보다 한칸 위에 보이기
+                    zIndex: zIndex + 1,
+
+                    // div center 정렬
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    msTransform: 'translate(-50%, -50%)',
+                    webkitTransform: 'translate(190%, -112%)'
+                });
+            }
+
+            // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
+            Element.prototype.setStyle = function(styles) {
+                for (var k in styles) this.style[k] = styles[k];
+                return this;
+            };
+
+            document.getElementById('popup_open_btn').addEventListener('click', function() {
+                // 모달창 띄우기
+                modal('my_modal');
+            });
+        </script>
+    </body>
+</html>

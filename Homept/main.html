@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="short icon" href="/favicon_image/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="highbar.css">
+        <link rel="stylesheet" href="mainmodal.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="mainmodal.js"></script>
+        <title>HomePT메인</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="logo">                           <!--버튼형식의 로고를 생성하였습니다.-->
+                <a href="main.html">
+                   <button class="logobtn"><img class="logoimg" src="/image/Logo.jpg" alt=""></button>
+                </a>
+            </div>
+            <p class="welcometext">오늘도 득근하세요. 별빛님</p>
+            <div class="log">
+                <div id="my_modal">
+                    <img class="profileimg" src="/image/profile.png" alt="">
+                    <h2>개인정보</h2>
+                    <a class="modal_close_btn">ⓧ</a>
+                    <p class="profiletext">안녕하세요 <br> 별빛님</p>
+                   <a href="login.html"><img class="proglogout" src="/image/login.png" alt=""></a>
+                   <hr class="progilehr">
+                   <button class="myprofiletbtn" onclick="location.href='mypage.html'"><img src="/image/profile.png" class="myprofile" alt=""><p class="profiletext2">내 정보 관리</p></button>
+                </div>
+                <button id="popup_open_btn"></button>       
+        </div>
+        <div class="droplist">
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle" id="drawer-toggle-label"></label>
+            <nav id="drawer">
+                <img class="sideimg" src="/image/logoblue.jpg" alt="여러분 운동 합시다.">
+                <hr class="sidehr">
+               <ul class="listli">
+                  <li><a class="lia" href="notice.html">공지사항</a></li>
+                  <li><a class="lia" href="event.html">이벤트</a></li>
+                  <li><a class="lia" href="execrise.html">운동</a></li>
+                  <li><a class="lia" href="bmi.html">BMI측정하기</a></li>
+                  <li><a class="lia" href="mypage.html">정보페이지</a></li>
+                  <li><a class="lia" href="company.html">회사소개</a></li>
+                  <div class="logouttext">
+                    <hr class="listhr">
+                    <a class="modal_close_btn">Login ⓧ</a>
+                </div>
+               </ul>
+            </nav>
+            <nav class="downlist">
+                <ul class="ullist">
+                    <li class="lilist"><a class="movelink" href="execrise.html">Exercise+</a>
+                    <!-- First Tier Drop Down -->
+                    <ul>
+                        <li class="lilist1"><a class="movelink" href="upperbody.html">상체</a></li>
+                        <li class="lilist1"><a class="movelink" href="lowerbody.html">하체</a></li>
+                    </ul> 
+                    <li class="lilist"><a class="movelink" href="https://www.google.com/search?tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=ALiCzsbXGeNQvAO5iHStxUjFY8UE7jp_7w:1654792310671&q=%EB%82%B4+%EC%A3%BC%EC%9C%84+%ED%97%AC%EC%8A%A4%EC%9E%A5&rflfq=1&num=10&rldimm=11764404484792289156#rlfi=hd:;si:11764404484792289156;mv:[[36.8840316,127.16424570000001],[36.782508899999996,127.10580960000001]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3,lf:1">헬스장 찾기</a>
+                    <li class="lilist"><a class="movelink" href="#" onclick="alert('준비 중입니다.')">SNS +</a>
+                    <ul>
+                        <li class="lilist1"><a class="movelink" href="#" onclick="alert('준비 중입니다.')">친구 찾기</a></li>
+                        <li class="lilist1"><a class="movelink" href="#" onclick="alert('준비 중입니다.')">게시물</a></li>
+                    </ul> 
+                    <li class="lilist"><a class="movelink" href="bmi.html">Bmi측정</a>      
+                </ul>            
+            </nav>
+        </div>
+        <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="/image/ad6.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-6" class="prev">&#x2039;</label>
+                    <label for="img-2" class="next">&#x203a;</label>
+                </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-2" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="/image/ad2.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-1" class="prev">&#x2039;</label>
+                    <label for="img-3" class="next">&#x203a;</label>
+                </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-3" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="/image/ad3.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-2" class="prev">&#x2039;</label>
+                    <label for="img-4" class="next">&#x203a;</label>
+                </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-4" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="/image/ad4.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-3" class="prev">&#x2039;</label>
+                    <label for="img-5" class="next">&#x203a;</label>
+                </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-5" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="/image/ad5.png"/>
+                </div>
+                <div class="nav">
+                    <label for="img-4" class="prev">&#x2039;</label>
+                    <label for="img-6" class="next">&#x203a;</label>
+                </div>
+            </li>
+        
+            <input type="radio" name="radio-btn" id="img-6" />
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="/image/ad1.jpg"/>
+                </div>
+                <div class="nav">
+                    <label for="img-5" class="prev">&#x2039;</label>
+                    <label for="img-1" class="next">&#x203a;</label>
+                </div>
+            </li>
+        
+            <li class="nav-dots">
+              <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+              <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+              <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+              <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+              <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+              <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+            </li>
+        </ul>
+        <div class="forms">
+        </div>
+        <div class="notice">
+            <div class="textline">
+                <p class="textforms">공지사항</p>
+                <a class="formslink" href="notice.html">+</a>
+            </div>
+            <a class="noticelink" href="###" >(공지) SNS 업데이트 7월 중 서비스 시작합니다.</a>
+            <hr>
+            <a class="noticelink" href="###" >(공지) 5월 점검</a>
+            <hr>
+            <a class="noticelink" href="###" >(공지) 4월 점검</a>
+            <hr>
+        </div>
+        <div class="evnentnotice">
+            <div class="textline">
+                <p class="textforms">이벤트 &nbsp;&nbsp;</p>
+                <a class="formslink" href="event.html">+</a>
+            </div>
+            <a class="noticelink" href="###" >(쿠팡) 프로틴할인</a><hr>
+            <a class="noticelink" href="###" >(11번가) 맛있는 닭가슴살먹고 득근하자</a><hr>
+        </div>
+        <div class="calenderform">
+            <div class="textline">
+                <p class="textforms">캘린더&nbsp;&nbsp;</p>
+                <a class="formslink" href="calender.html">+</a>
+                <div class="calendar">
+                    <div class="header">
+                      <div class="year-month"></div>
+                      <div class="nav1">
+                        <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                        <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                        <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+                      </div>
+                    </div>
+                    <div class="main">
+                      <div class="days">
+                        <div class="day">일</div>
+                        <div class="day">월</div>
+                        <div class="day">화</div>
+                        <div class="day">수</div>
+                        <div class="day">목</div>
+                        <div class="day">금</div>
+                        <div class="day">토</div>
+                      </div>
+                      <div class="dates"></div>
+                    </div>
+                  </div>
+                  <script src="index.js"></script>
+            </div>
+         </div>
+
+         <footer >
+            <div class="footer">
+                <img class="footerlogo" src="/image/logo1.png" alt="logo">
+                <div class="footer-text">
+                    대표이사 임동균  &nbsp; | &nbsp; 사업자등록번호 012-34-56789 <br/>
+                    (주) HomePT : Sixteam &nbsp; | &nbsp; 31065 충청남도 천안시 동남구 문암로 76<br/>
+                    HomePT@bu.ac.kr &nbsp; | &nbsp; 대표번호 010-1234-5678<br/>
+                </div>
+            </div>
+            </footer>
+          <script>
+            function modal(id) {
+                var zIndex = 9999;
+                var modal = document.getElementById(id);
+
+                // 모달 div 뒤에 희끄무레한 레이어
+                var bg = document.createElement('div');
+                bg.setStyle({
+                    position: 'fixed',
+                    zIndex: zIndex,
+                    left: '0px',
+                    top: '0px',
+                    width: '100%',
+                    height: '100%',
+                    overflow: 'auto',
+                    // 레이어 색갈은 여기서 바꾸면 됨
+                    backgroundColor: 'rgba(0,0,0,0.4)'
+                });
+                document.body.append(bg);
+
+                // 닫기 버튼 처리, 시꺼먼 레이어와 모달 div 지우기
+                modal.querySelector('.modal_close_btn').addEventListener('click', function() {
+                    bg.remove();
+                    modal.style.display = 'none';
+                });
+
+                modal.setStyle({
+                    position: 'fixed',
+                    display: 'block',
+                    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+
+                    // 시꺼먼 레이어 보다 한칸 위에 보이기
+                    zIndex: zIndex + 1,
+
+                    // div center 정렬
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    msTransform: 'translate(-50%, -50%)',
+                    webkitTransform: 'translate(190%, -112%)'
+                });
+            }
+
+            // Element 에 style 한번에 오브젝트로 설정하는 함수 추가
+            Element.prototype.setStyle = function(styles) {
+                for (var k in styles) this.style[k] = styles[k];
+                return this;
+            };
+
+            document.getElementById('popup_open_btn').addEventListener('click', function() {
+                // 모달창 띄우기
+                modal('my_modal');
+            });
+        </script>
+    </body>
+</html>
